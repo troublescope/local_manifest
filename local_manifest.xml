@@ -33,14 +33,14 @@
     name="android_hardware_xiaomi"
     path="hardware/xiaomi"
     remote="los"
-    revision="lineage-21.0"
+    revision="lineage-21"
     clone-depth="1" />
     
   <project
     name="android_hardware_mediatek"
     path="hardware/mediatek"
     remote="los"
-    revision="lineage-20.0"
+    revision="lineage-20"
     clone-depth="1" />
   
   <project
