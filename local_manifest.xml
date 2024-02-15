@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remote Repositories -->
+  <remote name="mt6785" fetch="https://github.com/hannahmontanadeving" />
+  <remote name="local" fetch="https://github.com/AndroDesk" />
+  <remote name="los" fetch="https://github.com/LineageOS" />
+  
+  <!-- Device Projects -->
+  <project
+    name="android_device_xiaomi_rosemary"
+    path="device/xiaomi/rosemary"
+    remote="local"
+    revision="matrix-14"
+    clone-depth="1" />
+  
+  <project
+    name="android_vendor_xiaomi_rosemary"
+    path="vendor/xiaomi/rosemary"
+    remote="local"
+    revision="lineage-21"
+    clone-depth="1" />
+  
+  <project
+    name="android_kernel_xiaomi_mt6785"
+    path="kernel/xiaomi/mt6785"
+    remote="mt6785"
+    revision="lineage-21"
+    clone-depth="1" />
+    
+  <!-- Device Dependencies -->
+  <project
+    name="android_hardware_xiaomi"
+    path="hardware/xiaomi"
+    remote="los"
+    revision="lineage-21.0"
+    clone-depth="1" />
+    
+  <project
+    name="android_hardware_mediatek"
+    path="hardware/mediatek"
+    remote="los"
+    revision="lineage-20.0"
+    clone-depth="1" />
+  
+  <project
+    name="android_device_mediatek_sepolicy_vndr"
+    path="device/mediatek/sepolicy_vndr"
+    remote="mt6785"
+    revision="lineage-21" />
+
+</manifest>
